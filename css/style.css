@@ -16,9 +16,10 @@ img{
   margin: 0 auto;
 }
 
-ul{
+/* Colors Remote*/
+ul {
   width: 100px;
-  height: 200px;
+  height: 265px; /* increased to accommodate 4 buttons */
   border: 3px solid black;
   margin: 0 auto;
   list-style: none;
@@ -46,6 +47,10 @@ footer{
 
 #blue{
   background: #3498db;
+}
+
+#orange {
+  background-color: #f39c12;
 }
 
 /* on smaller screen the background will be light blue instead of white */ 

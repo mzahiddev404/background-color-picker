@@ -37,14 +37,20 @@ footer{
 /* ADDITIONAL STYLES
 /*******************************************/
 #purple{
-  background: rgba(241,63,247,1);
+  background:#9b59b6;
 }
 
 #green{
-  background: rgba(0,253,81,1);
+  background: #2ecc71;
 }
 
 #blue{
-  background: rgba(0,254,255);
+  background: #3498db;
 }
 
+/* on smaller screen the background will be light blue instead of white */ 
+@media (max-width: 600px) {
+  body {
+    background-color: #f0f4ff; /* light soft blue */
+  }
+}

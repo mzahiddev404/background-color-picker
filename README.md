@@ -17,4 +17,6 @@
 I validated HTML using [W3C Validator](https://validator.w3.org/).  
 No errors or warnings were found.
 
+Placed media queries for small screen (light blue background)
+
 

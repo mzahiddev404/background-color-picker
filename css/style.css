@@ -59,3 +59,27 @@ footer{
     background-color: #f0f4ff;
   }
 }
+
+/* Back to Top Button */
+.btt-container {
+  text-align: center;
+  margin-top: 20px; /* adds breathing room */
+}
+
+.btt {
+  padding: 8px 18px;           /* bigger */
+  background-color: rgba(28, 42, 42, 1); /* dark with 70% opacity */
+  color: white;
+text-decoration: none;          /* remove underline */
+  border-radius: 6px;           /* slightly rounder */
+  font-weight: 600;             /* bolder */
+  font-size: 0.8rem;              
+  cursor: pointer;              /* indicates clickable */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4); /* subtle depth */
+  transition: background-color 0.3s ease;
+}
+
+.btt:hover {
+  background-color: rgba(0,140,133,1); /* darker teal for hover */
+}
+

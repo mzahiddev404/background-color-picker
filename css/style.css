@@ -84,6 +84,16 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+footer a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #3498db;
+  text-decoration: none;
+}
 
 /* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 600px) {

@@ -1,101 +1,93 @@
-/* Box Model Hack */
-*{
+/* ========== GLOBAL RESET & LAYOUT ========== */
+* {
   box-sizing: border-box;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-h1, h2{
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2 {
   text-align: center;
 }
 
-img{
+/* ========== MAIN STRUCTURE ========== */
+main {
+  flex: 1;
+}
+
+img {
   display: block;
   height: 300px;
   margin: 0 auto;
 }
 
-/* Colors Remote*/
+/* ========== REMOTE CONTROL STYLES ========== */
 ul {
   width: 100px;
-  height: 265px; /* increased to accommodate 4 buttons */
+  height: 265px;
   border: 3px solid black;
   margin: 0 auto;
   list-style: none;
   padding: 0;
 }
 
-li{
+li {
   width: 94px;
   height: 65px;
-}
-
-/* add Hover scale effect to color buttons */
-li {
   transition: transform 0.2s ease;
 }
+
 li:hover {
   transform: scale(1.1);
 }
 
-body {
-  transition: background-color 0.5s ease;
+/* === Color Button Backgrounds === */
+#purple  { background: #9b59b6; }
+#green   { background: #2ecc71; }
+#blue    { background: #3498db; }
+#orange  { background-color: #f39c12; }
+
+/* ========== BACK TO TOP BUTTON ========== */
+.btt-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-footer{
-    text-align: bottom;
-}
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-body {
-  transition: background-color 0.5s ease;
-}
-
-#purple{
-  background:#9b59b6;
-}
-
-#green{
-  background: #2ecc71;
+.btt {
+  padding: 8px 18px;
+  background-color: rgba(28, 42, 42, 1);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
 }
 
-#blue{
-  background: #3498db;
+.btt:hover {
+  background-color: rgba(0, 140, 133, 1);
 }
 
-#orange {
-  background-color: #f39c12;
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
 }
 
-/* on smaller screen the background will be light blue instead of white */ 
+/* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 600px) {
   body {
     background-color: #f0f4ff;
   }
 }
-
-/* Back to Top Button */
-.btt-container {
-  text-align: center;
-  margin-top: 20px; /* adds breathing room */
-}
-
-.btt {
-  padding: 8px 18px;           /* bigger */
-  background-color: rgba(28, 42, 42, 1); /* dark with 70% opacity */
-  color: white;
-text-decoration: none;          /* remove underline */
-  border-radius: 6px;           /* slightly rounder */
-  font-weight: 600;             /* bolder */
-  font-size: 0.8rem;              
-  cursor: pointer;              /* indicates clickable */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4); /* subtle depth */
-  transition: background-color 0.3s ease;
-}
-
-.btt:hover {
-  background-color: rgba(0,140,133,1); /* darker teal for hover */
-}
-

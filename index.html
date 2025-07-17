@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="chair, background, lights">
-
-        <meta name="author" content="Muhammad Zahid">
-        <meta name="description" content="Hello World this remote helps streamer pick the best background color for their room. Created as pre-work for AZNext web dev.">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="chair, background, lights" />
+        <meta name="author" content="Muhammad Zahid" />
+        <meta name="description" content="Remote helps streamers pick room background color. Pre-work for AZNext Web Dev." />
 
         <title>Pre-work Background Picker</title>
 
         <!-- external CSS link -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body id="home">
-        <div class="container">
-            <header>
-                <h1>Hello World🎮!!</h1>
-                <h2>Pick a Background with the Remote... The Cat stays the same.</h2>
-            </header>
-            <main>
-                <div class="lamp-container">
-                    <img src="img/cat.png" alt="Black cat sitting by chair with lamp">
-                    <div id="lampGlow"></div>
-                </div>
+    <!-- ======= HEADER ======= -->
+    <header>
+        <h1>Hello World🎮!!</h1>
+        <h2>Pick a Background with the Remote... The Cat stays the same.</h2>
+    </header>
 
-                <h2>Remote</h2>
-                <ul>
-                    <li id="purple"></li>
-                    <li id="green"></li>
-                    <li id="blue"></li>
-                    <li id="orange"></li>
-                </ul>
-            </main>
-        </div>
+    <!-- ======= MAIN CONTENT ======= -->
+    <main>
+        <!-- === Lamp & Cat Image Section === -->
+        <section class="lamp-container"> <!-- formerly a div -->
+            <img src="img/cat.png" alt="Black cat sitting by chair with lamp" />
+            <div id="lampGlow"></div>
+        </section>
 
-        <!-- BACK TO TOP BUTTON HERE -->
+        <!-- === Remote Buttons Section === -->
+        <h2>Remote</h2>
+        <ul>
+            <li id="purple"></li>
+            <li id="green"></li>
+            <li id="blue"></li>
+            <li id="orange"></li>
+        </ul>
+
+        <!-- === Back to Top Button Section === -->
         <div class="btt-container">
-            <a href="#home" class="btt">Back to Top</a>
+        <a href="#home" class="btt">Back to Top</a>
         </div>
+    </main>
 
-        <footer>
-        <p>© 2025 Muhammad Zahid</p> 
+    <!-- ======= FOOTER ======= -->
+    <footer>
+        <p>© 2025 Muhammad Zahid</p>
         <p>Built with 💻 and <code>js</code> | <code>document.querySelector</code></p>
-        <p><a href="https://github.com/mzahiddev404/background-color-picker-prework/tree/main" target="_blank">🔗Code on GitHub</a></p>
+        <p>
+        <a href="https://github.com/mzahiddev404/background-color-picker-prework/tree/main" target="_blank">
+            🔗Code on GitHub
+        </a>
+        </p>
+    </footer>
 
-        </footer>
-
-            <!-- external javascript link-->
-            <script src="js/main.js"></script>
-
+        <!-- external JavaScript -->
+        <script src="js/main.js"></script>
     </body>
 </html>

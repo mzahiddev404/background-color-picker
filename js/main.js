@@ -26,10 +26,16 @@
 //   document.body.style.backgroundColor = '#f39c12';
 //   document.body.style.color = 'white';
 // }
+// --------------------------
+// or can accomplish it all with this shorter code below
+// --------------------------
 
-// --------------------------
-// or can accomplish it all with this shorter code 
-// --------------------------
+
+// ==============================
+// BACKGROUND COLOR PICKER LOGIC
+// ==============================
+
+// Define button IDs with corresponding background colors
 const colorMap = {
   purple: 'rgba(241,63,247,1)',
   green: 'rgba(0,253,81,1)',
@@ -37,9 +43,16 @@ const colorMap = {
   orange: '#f39c12'
 }
 
+// Loop through each color and apply click event to set background
 for (const [id, color] of Object.entries(colorMap)) {
-  document.getElementById(id).onclick = () => {
+  document.getElementById(id).addEventListener('click', () => {
     document.body.style.backgroundColor = color
     document.body.style.color = 'white'
-  }
+  })
 }
+
+// Reset button restores default white background + black text
+document.getElementById('reset').addEventListener('click', () => {
+  document.body.style.backgroundColor = '#ffffff'
+  document.body.style.color = 'black'
+})

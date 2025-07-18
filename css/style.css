@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -15,7 +16,8 @@ body {
 }
 
 /* ========== TYPOGRAPHY ========== */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -33,7 +35,7 @@ img {
 /* ========== REMOTE CONTROL STYLES ========== */
 ul {
   width: 100px;
-  height: 265px;
+  height: auto;
   border: 3px solid black;
   margin: 0 auto;
   list-style: none;
@@ -44,6 +46,12 @@ li {
   width: 94px;
   height: 65px;
   transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
 
 li:hover {
@@ -51,10 +59,25 @@ li:hover {
 }
 
 /* === Color Button Backgrounds === */
-#purple  { background: #9b59b6; }
-#green   { background: #2ecc71; }
-#blue    { background: #3498db; }
-#orange  { background-color: #f39c12; }
+#purple {
+  background: #9b59b6;
+}
+#green {
+  background: #2ecc71;
+}
+#blue {
+  background: #3498db;
+}
+#orange {
+  background-color: #f39c12;
+}
+
+/* === Reset Button Styles === */
+#reset {
+  background: #333;
+  color: white;
+  font-size: 0.8rem;
+}
 
 /* ========== BACK TO TOP BUTTON ========== */
 .btt-container {
@@ -84,6 +107,7 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
 footer a {
   color: inherit;
   text-decoration: underline;

@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="chair, background, lights" />
-        <meta name="author" content="Muhammad Zahid" />
-        <meta name="description" content="Remote helps streamers pick room background color. Pre-work for AZNext Web Dev." />
+  <head>
+    <!-- ======= META INFO ======= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="chair, background, lights" />
+    <meta name="author" content="Muhammad Zahid" />
+    <meta name="description" content="Remote helps streamers pick room background color. Pre-work for AZNext Web Dev." />
 
-        <title>Pre-work Background Picker</title>
+    <title>Pre-work Background Picker</title>
 
-        <!-- external CSS link -->
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+    <!-- ======= EXTERNAL CSS ======= -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <body id="home">
+  <body id="home">
     <!-- ======= HEADER ======= -->
     <header>
-        <h1>Hello World🎮!!</h1>
-        <h2>Pick a Background with the Remote... Cat stays the same.</h2>
+      <h1>Hello World🎮!!</h1>
+      <h2>Pick a Background with the Remote... Cat stays the same.</h2>
     </header>
 
     <!-- ======= MAIN CONTENT ======= -->
     <main>
-        <!-- === Lamp & Cat Image Section === -->
-        <section class="lamp-container"> <!-- formerly a div -->
-            <img src="img/cat.png" alt="Black cat sitting by chair with lamp" />
-            <div id="lampGlow"></div>
-        </section>
+      <!-- === Lamp & Cat Section === -->
+      <section class="lamp-container"> <!-- formerly a div -->
+        <img src="img/cat.png" alt="Black cat sitting by chair with lamp" />
+        <div id="lampGlow"></div>
+      </section>
 
-        <!-- === Remote Buttons Section === -->
-        <h2>Remote</h2>
-        <ul>
+      <!-- === Remote Control Section === -->
+      <h2>Remote</h2>
+      <ul>
             <li id="purple"></li>
             <li id="green"></li>
             <li id="blue"></li>
             <li id="orange"></li>
-        </ul>
+            <li id="reset">Reset</li> <!-- added reset button -->
+      </ul>
 
-        <!-- === Back to Top Button Section === -->
-        <div class="btt-container">
+      <!-- === Back to Top Button === -->
+      <div class="btt-container">
         <a href="#home" class="btt">Back to Top</a>
-        </div>
+      </div>
     </main>
 
     <!-- ======= FOOTER ======= -->
     <footer>
-        <p>© 2025 <a href="https://github.com/mzahiddev404" target="_blank">Muhammad Zahid</a></p>
-        <p>Built with 💻 and <code>JavaScript</code> | DOM methods like <code>document.querySelector</code></p>
-        <p>
-            <a href="https://github.com/mzahiddev404/background-color-picker-prework" target="_blank"> 🔗 View Source Code
-            </a>
-        </p>
+      <p>© 2025 <a href="https://github.com/mzahiddev404" target="_blank">Muhammad Zahid</a></p>
+      <p>Built with 💻 and <code>JavaScript</code> | DOM methods like <code>document.querySelector</code></p>
+      <p>
+        <a href="https://github.com/mzahiddev404/background-color-picker-prework" target="_blank"> 🔗 View Source Code </a>
+      </p>
     </footer>
 
-        <!-- external JavaScript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- ======= EXTERNAL JS ======= -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

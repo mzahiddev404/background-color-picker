@@ -31,9 +31,7 @@ img {
   height: 300px;
   margin: 0 auto;
 }
-::selection{
-  color:green;
-}
+
 /* ========== REMOTE CONTROL STYLES ========== */
 ul {
   width: 100px;

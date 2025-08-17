@@ -1,6 +1,7 @@
 // --------------------------
 // Old version (manual functions)
 // --------------------------
+// event listener; smurfs sitting & waiting for click here to run the function
 // document.getElementById('purple').onclick = partyPurple
 // document.getElementById('green').onclick = partyGreen
 // document.getElementById('blue').onclick = partyBlue

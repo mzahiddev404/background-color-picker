@@ -1,7 +1,7 @@
-# 🎮 Background Color Picker – Prework
+# 🎮 Background Color Picker
 
 ## 📁 Project File Structure
-    background-color-picker-prework/
+    background-color-picker/
         ├── index.html
         ├── css/
         │   └── style.css

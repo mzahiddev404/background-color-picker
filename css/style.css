@@ -6,46 +6,46 @@
 html,
 body {
   height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  margin: 0; /* remove default spacing */
+  display: flex; 
+  flex-direction: column; /* stack elements vertically */
 }
 
 body {
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; /* color changes smoothness*/
 }
 
 /* ========== TYPOGRAPHY ========== */
 h1,
 h2 {
-  text-align: center;
+  text-align: center; /* center align headings */
 }
 
 h2 {
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 1rem 0; /* spacing above/below */
 }
 
 /* ========== MAIN STRUCTURE ========== */
 main {
-  flex: 1;
+  flex: 1; /* grow to fill available space (pushes footer down) */
 }
 
 img {
-  display: block;
-  height: 300px;
-  margin: 0 auto;
+  display: block; /* remove inline spacing */
+  height: 300px; /* cat image,fixed height  */
+  margin: 0 auto; /* center horizontally */
 }
 
 /* ========== REMOTE CONTROL STYLES ========== */
 ul {
   width: 100px;
   border: 3px solid black;
-  margin: 0 auto;
-  list-style: none;
+  margin: 0 auto; 
+  list-style: none; /* remove bullets, Remote Color*/
   padding: 0;
-  border-radius: 10px;
+  border-radius: 10px; /* rounded outer container */
 }
 
 button {
@@ -55,11 +55,11 @@ button {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* button text vertically center */
+  justify-content: center; /* button text horizontally center*/
   font-weight: bold;
   color: white;
-  cursor: pointer;
+  cursor: pointer; /* pointer on hover */
   border: none; /* remove default button borders; else would have border around color */
 }
 
@@ -109,29 +109,42 @@ button:hover {
 }
 
 .btt:hover {
-  background-color: rgba(0, 140, 133, 1);
+  background-color: rgba(0, 140, 133, 1); /* teal hover */
 }
 
 /* ========== FOOTER ========== */
 footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0; /* space inside footer */
 }
 
 footer a {
-  color: inherit;
+  color: inherit; /* same as parent text color */
   text-decoration: underline;
   font-weight: 600;
 }
 
 footer a:hover {
-  color: #3498db;
+  color: #3498db; /* highlight link on hover */
   text-decoration: none;
 }
 
 /* ========== RESPONSIVE STYLES ========== */
 @media (max-width: 600px) {
   body {
-    background-color: #f0f4ff;
+    background-color: #f0f4ff; /* light blue background on small screens */
   }
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.cat-shake {
+  animation: shake 0.3s; /* triggers shake effect */
 }

@@ -57,3 +57,24 @@ document.getElementById('reset').addEventListener('click', () => {
   document.body.style.backgroundColor = '#ffffff'
   document.body.style.color = 'black'
 })
+
+// ==============================
+// CAT IMAGE + SOUND INTERACTION UPDATE/New
+// ==============================
+
+// Grab cat image element by ID
+const catImg = document.getElementById('cat');
+
+// Load meow sound effect (must exist in same folder)
+const meow = new Audio('sound.mp3'); // sound.mp3 in folder
+
+// On cat click → play sound + trigger shake animation
+catImg.addEventListener('click', () => {
+  meow.play(); // play sound
+  catImg.classList.add('cat-shake'); // CSS animation class
+
+  // Remove the cat-shake class after animation duration so it can re-trigger
+  setTimeout(() => {
+    catImg.classList.remove('cat-shake');
+  }, 300); // 300 ms matches CSS animation timing
+});
